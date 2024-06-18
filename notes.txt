@@ -1,0 +1,10 @@
+Manrope SemiBold 600 16px
+Manrope Medium 500
+Manrope ExtraBold 800
+Manrope Bold 700
+
+Кнопка - по БЭМ
+Заголовки секций - по БЭМ
+
+button--black
+

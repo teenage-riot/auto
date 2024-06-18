@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://api-maps.yandex.ru/v3/?apikey=34e4779d-1120-4436-a813-f1fb601e40c7&lang=en_US"></script>
+  <title>Auto</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="overlay"></div>
+    <header class="header">
+      <a class="burger" href="##">
+        <span></span>
+      </a>
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-inner">
+            <a class="header__logo logo" href="##">
+              <img src="img/logo-black.svg" alt="Logo">
+            </a>
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a class="header__nav-link link" href="#">Home</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link link" href="#about-us">About us</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link link" href="#services">Services</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link link" href="#blog">Blog</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link link" href="#contact-us">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__nav-separator">
+              <img src="img/header-separator.svg" alt="Just separator">
+            </div>
+            <div class="header__nav-assistance">
+              <div class="header__nav-assistance-img">
+                <a href="##">
+                  <img src="img/icons/assistance.svg" alt="Call an assistance">
+                </a>
+              </div>
+              <div class="header__nav-assistance-flexbox">
+                <div class="header__nav-assistance-text">
+                  Road Assistance
+                </div>
+                <div class="header__nav-assistance-phone">
+                  <a class="link" href="##">
+                    1800 265 24 52
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__body">
+        <div class="container">
+          <div class="header__body-inner">
+            <div class="header__content">
+              <h1 class="header__title title">
+                Get your vehicle service done online at one place
+              </h1>
+              <div class="header__buttons-block">
+                <button class="header__button button">Book a service</button>
+                <a class="header__play-video" href="https://youtu.be/a1gXhs67moM?si=KLgDZVQliRK9hw_R" data-fancybox>
+                  <img src="img/icons/play-icon.svg" alt="Play video">
+                  Play Video
+                </a>
+              </div>
+              <div class="header__we-are-open">
+                <img src="img/icons/clocks.svg" alt="">
+                <div class="header__we-are-open-flexbox">
+                  <div class="header__we-are-open-upper-text">We are open </div>
+                  <div class="header__we-are-open-lower-text">Monday to Friday 9:00 AM to 10:00 AM</div>
+                </div>
+              </div>
+            </div>
+            <div class="header__image-container">
+              <img class="header__main-img" src="img/service-image.jpeg" alt="">
+              <div class="header__atop-service header__atop">
+                <img src="img/icons/24hr.svg" alt="">
+                Quick service
+              </div>
+              <div class="header__atop-rating header__atop">
+                <div class="header__atop-rating-flexbox">
+                  <div class="header__atop-rating-nums">4.5/5</div>
+                  <div class="header__atop-rating-word">Rating</div>
+                </div>
+                <div class="header__atop-rating-rateYo"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="main__offer offer">
+        <div class="container">
+          <div class="offer__inner" id="about-us">
+            <div class="offer__title-section">
+              <h3 class="offer__subtitle">What we Offer</h3>
+              <h2 class="offer__title title">We offer full service auto repair & maintenance</h2>
+            </div>
+            <div class="offer__buttons-section">
+              <div class="offer__button">
+                <img src="img/offer-icons/diag.svg" alt="">
+                <div class="offer__button-label">Diagnostics</div>
+              </div>
+              <div class="offer__button">
+                <img src="img/offer-icons/engine.svg" alt="">
+                <div class="offer__button-label">Engine Repair</div>
+              </div>
+              <div class="offer__button">
+                <img src="img/offer-icons/wheel.svg" alt="">
+                <div class="offer__button-label">Wheel Repair</div>
+              </div>
+              <div class="offer__button">
+                <img src="img/offer-icons/oil.svg" alt="">
+                <div class="offer__button-label">Oil Filter</div>
+              </div>
+              <div class="offer__button">
+                <img src="img/offer-icons/body.svg" alt="">
+                <div class="offer__button-label">Body Work</div>
+              </div>
+              <div class="offer__button">
+                <img src="img/offer-icons/batt.svg" alt="">
+                <div class="offer__button-label">Batteries</div>
+              </div>
+              <div class="offer__button">
+                <img src="img/offer-icons/inscurance.svg" alt="">
+                <div class="offer__button-label">Insurance Claim</div>
+              </div>
+              <div class="offer__button">
+                <img src="img/offer-icons/custom.svg" alt="">
+                <div class="offer__button-label">Custom Service</div>
+              </div>
+            </div>
+            <div class="offer__bottom-inscription">
+              <a class="offer__link link" href="##">Learn about services &nbsp; &nbsp;
+                <div class="offer__link-image-container">
+                  <img class="offer__link-arrow" src="img/icons/arrow-right.svg" alt="">
+                  <img class="offer__link-arrow-orange" src="img/icons/arrow-right-orange.svg" alt="">
+                  <img class="offer__link-arrow-darkred" src="img/icons/arrow-right-darkred.svg" alt="">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__we-follow we-follow">
+        <div class="container">
+          <div class="we-follow__inner">
+            <div class="we-follow__content">
+              <h2 class="we-follow__title title">We follow a clear process to help you out.</h2>
+              <p class="we-follow__content-text">
+                Through True Rich Attended does no end it his mother since real had half every him case in packages
+                enquire
+              </p>
+              <button class="button">Learn more</button>
+            </div>
+            <ol class="we-follow__list">
+              <li class="we-follow__list-item">
+                <div class="we-follow__list-number">01</div>
+                <div class="we-follow__list-title">Get a Quote</div>
+                <div class="we-follow__list-decor">
+                  <img src="img/we-follow-list-decor.svg" alt="">
+                </div>
+                <div class="we-follow__list-text">
+                  Through True Rich Attended does no end it his mother since real had half every.
+                </div>
+              </li>
+              <li class="we-follow__list-item">
+                <div class="we-follow__list-number">02</div>
+                <div class="we-follow__list-title">Book an Appointment</div>
+                <div class="we-follow__list-decor">
+                  <img src="img/we-follow-list-decor.svg" alt="">
+                </div>
+                <div class="we-follow__list-text">
+                  Through True Rich Attended does no end it his mother since real had half every.
+                </div>
+              </li>
+              <li class="we-follow__list-item">
+                <div class="we-follow__list-number">03</div>
+                <div class="we-follow__list-title">Get your Service Done</div>
+                <div class="we-follow__list-decor">
+                  <img src="img/we-follow-list-decor.svg" alt="">
+                </div>
+                <div class="we-follow__list-text">
+                  Through True Rich Attended does no end it his mother since real had half every.
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section class="main__stats stats">
+        <div class="container">
+          <div class="stats__inner" id="services">
+            <div class="stats__img-block">
+              <img src="img/get-in-1.jpeg" alt="">
+              <img src="img/get-in-2.jpeg" alt="">
+              <div class="stats__content">
+                <h2 class="stats__title title">Get in touch with us for your service related query</h2>
+                <button class="button button--black">Contact Us</button>
+              </div>
+            </div>
+            <ul class="stats__list">
+              <li class="stats__list-item">
+                <div class="stats__list-value">20+</div>
+                <div class="stats__list-indicator">Proffesional</div>
+              </li>
+              <li class="stats__list-item">
+                <div class="stats__list-value">10+</div>
+                <div class="stats__list-indicator">Years Experience</div>
+              </li>
+              <li class="stats__list-item">
+                <div class="stats__list-value">12K+</div>
+                <div class="stats__list-indicator">Service Closed</div>
+              </li>
+              <li class="stats__list-item">
+                <div class="stats__list-value">100%</div>
+                <div class="stats__list-indicator">Customer Satisfaction</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="main__brands brands">
+        <div class="container">
+          <div class="brands__inner">
+            <h2 class="brands__title title">
+              Brands we Serve
+            </h2>
+            <ul class="brands__grid">
+              <li class="brands__grid-item">
+                <a class="brands__link" href="##"><img class="brands__logo" src="img/brands/brand-4.svg" alt=""></a>
+              </li>
+              <li class="brands__grid-item">
+                <a class="brands__link" href="##"><img class="brands__logo" src="img/brands/brand-2.svg" alt=""></a>
+              </li>
+              <li class="brands__grid-item">
+                <a class="brands__link" href="##"><img class="brands__logo" src="img/brands/brand-3.svg" alt=""></a>
+              </li>
+              <li class="brands__grid-item">
+                <a class="brands__link" href="##"><img class="brands__logo" src="img/brands/brand-1.svg" alt=""></a>
+              </li>
+              <li class="brands__grid-item">
+                <a class="brands__link" href="##"><img class="brands__logo" src="img/brands/brand-0.svg" alt=""></a>
+              </li>
+              <li class="brands__grid-item">
+                <a class="brands__link" href="##"><img class="brands__logo" src="img/brands/brand-4.svg" alt=""></a>
+              </li>
+              <li class="brands__grid-item">
+                <a class="brands__link" href="##"><img class="brands__logo" src="img/brands/brand-2.svg" alt=""></a>
+              </li>
+              <li class="brands__grid-item">
+                <a class="brands__link" href="##"><img class="brands__logo" src="img/brands/brand-3.svg" alt=""></a>
+              </li>
+              <li class="brands__grid-item">
+                <a class="brands__link" href="##"><img class="brands__logo" src="img/brands/brand-1.svg" alt=""></a>
+              </li>
+              <li class="brands__grid-item">
+                <a class="brands__link" href="##"><img class="brands__logo" src="img/brands/brand-0.svg" alt=""></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="main__blog blog">
+        <div class="container">
+          <div class="blog__inner">
+            <div class="blog__inner" id="blog">
+              <h2 class="blog__title title">Our blog</h2>
+              <div class="blog__filter-box">
+                <button class="blog__filter-btn blog__filter-btn--active link" data-filter="all">Latest</button>
+                <button class="blog__filter-btn link" data-filter=".blog__list-item--popular">Popular</button>
+                <button class="blog__filter-btn link" data-filter=".blog__list-item--favorite">Favorites</button>
+              </div>
+              <ul class="blog__list">
+                <li class="mix blog__list-item blog__list-item--popular" data-order="1">
+                  <a href="##" class="blog__list-link">
+                    <div class="blog__list-img-box">
+                      <img src="img/blog/blog-01.jpeg" alt="">
+                    </div>
+                    <div class="blog__list-subtitle">Posted on October 6th 2021</div>
+                    <h4 class="blog__list-title">5 Genius Car Accessories You Should Never Drive Without</h4>
+                    <p class="blog__list-text">
+                      We provide a full range of front end mechanical repairs for all makes and models We provide a full
+                      range of front end mechanical repairs for all makes and models
+                    </p>
+                  </a>
+                </li>
+                <li class="mix blog__list-item blog__list-item--favorite" data-order="2">
+                  <a href="##" class="blog__list-link">
+                    <div class="blog__list-img-box">
+                      <img src="img/blog/blog-02.jpeg" alt="">
+                    </div>
+                    <div class="blog__list-subtitle">Posted on October 6th 2021</div>
+                    <h4 class="blog__list-title">5 Genius Car Accessories You Should Never Drive Without</h4>
+                    <p class="blog__list-text">
+                      We provide a full range of front end mechanical repairs for all makes and models We provide a full
+                      range of front end mechanical repairs for all makes and models
+                    </p>
+                  </a>
+                </li>
+                <li class="mix blog__list-item blog__list-item--popular blog__list-item--favorite" data-order="3">
+                  <a href="##" class="blog__list-link">
+                    <div class="blog__list-img-box">
+                      <img src="img/blog/blog-03.jpeg" alt="">
+                    </div>
+                    <div class="blog__list-subtitle">Posted on October 6th 2021</div>
+                    <h4 class="blog__list-title">5 Genius Car Accessories You Should Never Drive Without</h4>
+                    <p class="blog__list-text">
+                      We provide a full range of front end mechanical repairs for all makes and models We provide a full
+                      range of front end mechanical repairs for all makes and models
+                    </p>
+                  </a>
+                </li>
+                <li class="mix blog__list-item" data-order="4">
+                  <a href="##" class="blog__list-link">
+                    <div class="blog__list-img-box">
+                      <img src="img/blog/blog-04.jpeg" alt="">
+                    </div>
+                    <div class="blog__list-subtitle">Posted on October 6th 2021</div>
+                    <h4 class="blog__list-title">5 Genius Car Accessories You Should Never Drive Without</h4>
+                    <p class="blog__list-text">
+                      We provide a full range of front end mechanical repairs for all makes and models We provide a full
+                      range of front end mechanical repairs for all makes and models
+                    </p>
+                  </a>
+                </li>
+                <li class="mix blog__list-item blog__list-item--popular" data-order="5">
+                  <a href="##" class="blog__list-link">
+                    <div class="blog__list-img-box">
+                      <img src="img/blog/blog-05.jpeg" alt="">
+                    </div>
+                    <div class="blog__list-subtitle">Posted on October 6th 2021</div>
+                    <h4 class="blog__list-title">5 Genius Car Accessories You Should Never Drive Without</h4>
+                    <p class="blog__list-text">
+                      We provide a full range of front end mechanical repairs for all makes and models We provide a full
+                      range of front end mechanical repairs for all makes and models
+                    </p>
+                  </a>
+                </li>
+                <li class="mix blog__list-item" data-order="6">
+                  <a href="##" class="blog__list-link">
+                    <div class="blog__list-img-box">
+                      <img src="img/blog/blog-06.jpeg" alt="">
+                    </div>
+                    <div class="blog__list-subtitle">Posted on October 6th 2021</div>
+                    <h4 class="blog__list-title">5 Genius Car Accessories You Should Never Drive Without</h4>
+                    <p class="blog__list-text">
+                      We provide a full range of front end mechanical repairs for all makes and models We provide a full
+                      range of front end mechanical repairs for all makes and models
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__customers customer">
+        <div class="container">
+          <div class="customers__inner">
+            <div class="customers__title-box">
+              <h2 class="customers__title title">
+                Our customers say the nicest things about our service
+              </h2>
+            </div>
+            <div class="customer__slider-wrapper">
+              <div class="customers__slider">
+                <div class="customers__slide">
+                  <div class="customers__person">
+                    <div class="customers__person-img">
+                      <img src="img/customer-1.jpeg" alt="">
+                    </div>
+                    <div class="customers__person-data">
+                      <div class="customers__person-name">Jonathan Vallem</div>
+                      <div class="customers__person-city">New York</div>
+                    </div>
+                  </div>
+                  <div class="customers__slide-text">
+                    I have got my car repaired at Finsweet many times before, they are good at what they do. Not only
+                    did
+                    they repair my car in a short comprehensive look on all the working
+                  </div>
+                </div>
+                <div class="customers__slide">
+                  <div class="customers__person">
+                    <div class="customers__person-img">
+                      <img src="img/customer-2.jpeg" alt="">
+                    </div>
+                    <div class="customers__person-data">
+                      <div class="customers__person-name">Smith Johnson</div>
+                      <div class="customers__person-city">New York</div>
+                    </div>
+                  </div>
+                  <div class="customers__slide-text">
+                    I have got my car repaired at Finsweet many times before, they are good at what they do. Not only
+                    did
+                    they repair my car in a short comprehensive look on all the working
+                  </div>
+                </div>
+                <div class="customers__slide">
+                  <div class="customers__person">
+                    <div class="customers__person-img">
+                      <img src="img/customer-1.jpeg" alt="">
+                    </div>
+                    <div class="customers__person-data">
+                      <div class="customers__person-name">Jonathan Vallem</div>
+                      <div class="customers__person-city">New York</div>
+                    </div>
+                  </div>
+                  <div class="customers__slide-text">
+                    I have got my car repaired at Finsweet many times before, they are good at what they do. Not only
+                    did
+                    they repair my car in a short comprehensive look on all the working
+                  </div>
+                </div>
+                <div class="customers__slide">
+                  <div class="customers__person">
+                    <div class="customers__person-img">
+                      <img src="img/customer-2.jpeg" alt="">
+                    </div>
+                    <div class="customers__person-data">
+                      <div class="customers__person-name">Smith Johnson</div>
+                      <div class="customers__person-city">New York</div>
+                    </div>
+                  </div>
+                  <div class="customers__slide-text">
+                    I have got my car repaired at Finsweet many times before, they are good at what they do. Not only
+                    did
+                    they repair my car in a short comprehensive look on all the working
+                  </div>
+                </div>
+                <div class="customers__slide">
+                  <div class="customers__person">
+                    <div class="customers__person-img">
+                      <img src="img/customer-1.jpeg" alt="">
+                    </div>
+                    <div class="customers__person-data">
+                      <div class="customers__person-name">Jonathan Vallem</div>
+                      <div class="customers__person-city">New York</div>
+                    </div>
+                  </div>
+                  <div class="customers__slide-text">
+                    I have got my car repaired at Finsweet many times before, they are good at what they do. Not only
+                    did
+                    they repair my car in a short comprehensive look on all the working
+                  </div>
+                </div>
+                <div class="customers__slide">
+                  <div class="customers__person">
+                    <div class="customers__person-img">
+                      <img src="img/customer-2.jpeg" alt="">
+                    </div>
+                    <div class="customers__person-data">
+                      <div class="customers__person-name">Smith Johnson</div>
+                      <div class="customers__person-city">New York</div>
+                    </div>
+                  </div>
+                  <div class="customers__slide-text">
+                    I have got my car repaired at Finsweet many times before, they are good at what they do. Not only
+                    did
+                    they repair my car in a short comprehensive look on all the working
+                  </div>
+                </div>
+                <div class="customers__slide">
+                  <div class="customers__person">
+                    <div class="customers__person-img">
+                      <img src="img/customer-1.jpeg" alt="">
+                    </div>
+                    <div class="customers__person-data">
+                      <div class="customers__person-name">Jonathan Vallem</div>
+                      <div class="customers__person-city">New York</div>
+                    </div>
+                  </div>
+                  <div class="customers__slide-text">
+                    I have got my car repaired at Finsweet many times before, they are good at what they do. Not only
+                    did
+                    they repair my car in a short comprehensive look on all the working
+                  </div>
+                </div>
+                <div class="customers__slide">
+                  <div class="customers__person">
+                    <div class="customers__person-img">
+                      <img src="img/customer-2.jpeg" alt="">
+                    </div>
+                    <div class="customers__person-data">
+                      <div class="customers__person-name">Smith Johnson</div>
+                      <div class="customers__person-city">New York</div>
+                    </div>
+                  </div>
+                  <div class="customers__slide-text">
+                    I have got my car repaired at Finsweet many times before, they are good at what they do. Not only
+                    did
+                    they repair my car in a short comprehensive look on all the working
+                  </div>
+                </div>
+              </div>
+              <div class="customer__slider-bottom">
+                <div class="customer__slider-dots"></div>
+                <div class="customers__slider-arrows">
+                  <div class="customers__arrow customers__arrow-prev">
+                    <img src="img/icons/arrow-left-short.svg" alt="">
+                  </div>
+                  <div class="customers__arrow customers__arrow-next">
+                    <img src="img/icons/arrow-right-short.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__faq faq">
+        <div class="container">
+          <div class="faq__inner">
+            <h2 class="faq__title title">Frequently Asked Questions</h2>
+            <ul class="faq__acc">
+              <li class="faq__acc-item  faq__acc-item--active">
+                  <div class="faq__acc-head">
+                    <h3 class="faq__acc-title">How long should a car repair take?</h3>
+                    <div class="faq__acc-btn"></div>
+                  </div>
+                  <div class="faq__acc-text"">
+                    I have got my car repaired at Finsweet many times before, they are good at
+                    what they do. Not only did they repair my car I have got my car repaired at Finsweet I have got my car
+                    repaired at Finsweet
+                  </div>
+              </li>
+              <li class="faq__acc-item">
+                  <div class="faq__acc-head">
+                    <h3 class="faq__acc-title">How do I schedule my car's appointment?</h3>
+                    <div class="faq__acc-btn"></div>
+                  </div>
+                  <div class="faq__acc-text" style="display: none;">
+                    I have got my car repaired at Finsweet many times before, they are good at
+                    what they do. Not only did they repair my car I have got my car repaired at Finsweet I have got my car
+                    repaired at Finsweet
+                  </div>
+              </li>
+              <li class="faq__acc-item">
+                  <div class="faq__acc-head">
+                    <h3 class="faq__acc-title">What are the repair services provided?</h3>
+                    <div class="faq__acc-btn"></div>
+                  </div>
+                  <div class="faq__acc-text" style="display: none;">
+                    I have got my car repaired at Finsweet many times before, they are good at
+                    what they do. Not only did they repair my car I have got my car repaired at Finsweet I have got my car
+                    repaired at Finsweet
+                  </div>
+              </li>
+              <li class="faq__acc-item">
+                  <div class="faq__acc-head">
+                    <h3 class="faq__acc-title">How do I find auto body shops near me?</h3>
+                    <div class="faq__acc-btn"></div>
+                  </div>
+                  <div class="faq__acc-text" style="display: none;">
+                    I have got my car repaired at Finsweet many times before, they are good at
+                    what they do. Not only did they repair my car I have got my car repaired at Finsweet I have got my car
+                    repaired at Finsweet
+                  </div>
+              </li>
+              <li class="faq__acc-item">
+                  <div class="faq__acc-head">
+                    <h3 class="faq__acc-title">Genuine spare parts during car repair?</h3>
+                    <div class="faq__acc-btn"></div>
+                  </div>
+                  <div class="faq__acc-text" style="display: none;">
+                    I have got my car repaired at Finsweet many times before, they are good at
+                    what they do. Not only did they repair my car I have got my car repaired at Finsweet I have got my car
+                    repaired at Finsweet
+                  </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="main__feedback feedback">
+        <div class="container">
+          <div class="feedback__inner" id="contact-us">
+            <h2 class="feedback__title title">Get in touch with our experts</h2>
+            <div class="feedback__content">
+              <form class="feedback__form">
+                <input class="feedback__form-input" required type="text" placeholder="Your full name">
+                <input class="feedback__form-input" required type="email" placeholder="Your Email">
+                <input class="feedback__form-input" required type="text" placeholder="Select service type">
+                <input class="feedback__form-input" required type="text" placeholder="Message">
+                <button class="button">Send message</button>
+              </form>
+              <div class="feedback__contacts">
+                <div class="feedback__subtitle">Address</div>
+                <div class="feedback__text">NH 234 Public Square San Francisco  65368</div>
+                <div class="feedback__subtitle">Contact  Details</div>
+                <div class="feedback__text">1800 265 24 52 <br> finsweet@gmail.com</div>
+                <div class="feedback__subtitle">Opening Hours</div>
+                <div class="feedback__text">Monday to Friday 9:00 AM to  10:00  AM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__map map">
+        <div class="container">
+          <div class="map__inner">
+            <div class="map__itself" id="map">
+            </div>
+            <div class="map__back-img">
+              <img src="img/footer-foto.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__top-inner">
+            <div class="footer__top-col">
+              <h3 class="footer__title title">
+                Get in touch with us for your service
+              </h3>
+              <div class="footer__top-links">
+                <a href="##" class="footer__top-link"><img src="img/icons/fb.svg" alt=""></a>
+                <a href="##" class="footer__top-link"><img src="img/icons/twit.svg" alt=""></a>
+                <a href="##" class="footer__top-link"><img src="img/icons/inst.svg" alt=""></a>
+                <a href="##" class="footer__top-link"><img src="img/icons/li.svg" alt=""></a>
+              </div>
+            </div>
+            <div class="footer__top-col">
+              <div class="footer__top-subtitle">Help line number</div>
+              <div class="footer__top-text">1800 265 24 52</div>
+              <div class="footer__top-subtitle">Address</div>
+              <div class="footer__top-text">NH 234   Public Square San Francisco  65368</div>
+              <div class="footer__top-subtitle">We are open</div>
+              <div class="footer__top-text">Monday to Friday 9:00 AM to 10:00 AM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-inner">
+            <a href="#" class="footer__bottom-logo">
+              <img src="img/logo-white.svg" alt="">
+            </a>
+            <ul class="footer__bottom-links">
+              <li><a class="link" href="#">Home</a></li>
+              <li><a class="link" href="#about-us">About us</a></li>
+              <li><a class="link" href="#services">Services</a></li>
+              <li><a class="link" href="#blog">Blog</a></li>
+              <li><a class="link" href="#contact-us">Contact us</a></li>
+            </ul>
+            <div class="footer__bottom-copy">
+              &copy; Copyright Finsweet 2021
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script src="scripts/mixitup.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="scripts/main.js"></script>
+
+</html>
