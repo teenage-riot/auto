@@ -1134,8 +1134,18 @@ html, body {
 
 .footer__bottom-copy {
   white-space: nowrap;
+  text-align: center;
+  /* vertical-align: bottom; */
+  /* line-height: 90px;  */
 }
 
+.footer__bottom-copy-developed {
+  margin-top: 5px;
+}
+
+.footer__bottom-copy-developed img {
+  vertical-align: middle;
+}
 
 
 /* --------------------------- adaptive ------------------------- */
